@@ -1,0 +1,181 @@
+.main {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.title {
+    margin: 0;
+    font-size: 1.4rem;
+    color: #1e293b;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #334155;
+}
+
+.input,
+.textarea {
+    padding: 10px 12px;
+    font-size: 1rem;
+    font-family: inherit;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input:focus,
+.textarea:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.textarea {
+    resize: vertical;
+}
+
+.dropzone {
+    padding: 28px 16px;
+    text-align: center;
+    border: 2px dashed #cbd5e1;
+    border-radius: 10px;
+    background: #f8fafc;
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s;
+}
+
+.dropzone:hover,
+.dragging {
+    border-color: #3b82f6;
+    background: #eff6ff;
+}
+
+.dropText {
+    margin: 0;
+    color: #64748b;
+}
+
+.dropText span {
+    color: #3b82f6;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.fileInput {
+    display: none;
+}
+
+.fileList,
+.cardFiles {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.fileItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    background: #f1f5f9;
+    border-radius: 8px;
+    font-size: 0.9rem;
+}
+
+.fileName {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.fileSize {
+    color: #64748b;
+    font-size: 0.8rem;
+}
+
+.removeBtn {
+    border: none;
+    background: transparent;
+    font-size: 1.3rem;
+    line-height: 1;
+    color: #94a3b8;
+    cursor: pointer;
+}
+
+.removeBtn:hover {
+    color: #ef4444;
+}
+
+.submitBtn {
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background: #3b82f6;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.submitBtn:hover {
+    background: #2563eb;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.card {
+    padding: 16px;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+}
+
+.card p {
+    margin: 4px 0;
+    color: #475569;
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardText {
+    white-space: pre-wrap;
+}
+
+.cardFiles {
+    margin-top: 8px;
+    font-size: 0.85rem;
+    color: #64748b;
+}
